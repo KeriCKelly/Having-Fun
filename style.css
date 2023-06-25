@@ -1,5 +1,44 @@
-/* CSS styles */
+html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-body {
-    background: greenyellow;
+div {
+  width: 200px;
+  height: 300px;
+}
+
+.border {
+  color: rgb(34, 193, 195);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  box-shadow: 3px 3px 3px teal;
+  padding: 8px;
+  transition: 0.2s, color 0.1s;
+}
+
+.card {
+  background: white;
+}
+
+.card p {
+  margin: 0px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.border:hover {
+  transform: scale(1.1);
+}
+
+.border:active {
+  transform: rotateY(180deg);
+  box-shadow: -3px 3px 3px teal;
+  color: white;
 }
